@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Template</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/fontawesome/css/all.css" rel="stylesheet"/>
+  </head>
+
+  <body>
+    
+  <header>
+    <div class="header-item" id="name"><a href="/">EXAMPLE</a> <a href="javascript:void(0);" class="icon" id="hide" onclick="myFunction()">
+    <i class="fa fa-bars"></i></a></div>
+    <div id="mobile-menu">
+    <div class="header-item"><a href="works">WORKS</a></div>
+    <div class="header-item"><a href="about">ABOUT</a></div>
+    <div class="header-item"><a href="contact">CONTACT</a></div>
+    </div>
+  </header>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("mobile-menu");
+  if (x.style.display === "contents") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "contents";
+  }
+}
+</script>
+
+  <main>
+  <h1>Thank you for your message.</h1>
+  </main>
+
+  <footer>
+    <div id="links">
+      <a href="https://www.instagram.com/" class="fa-brands fa-instagram"></a>
+      <a href="contact" class="fas fa-envelope-square"></a>
+    </div>
+<p>Copyright © Example</p>
+  </footer>
+  
+  </body>
+</html>

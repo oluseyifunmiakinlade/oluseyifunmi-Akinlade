@@ -1,0 +1,25 @@
+body {
+    /* The basics of defining what your box does with the boxes or text or images inside of it */
+    display: flex; /* says the elements are placed in a row or a column inside the box */
+    flex-direction: row/column; /* defining the direction */
+
+    /* Make your box beautiful! */
+    background-color: black; /* adding a color to it, not adding this will make it transparent*/
+    border: 1px solid/dotted/dashed/double/groove/ridge/inset/outset white; /* giving it a border*/
+    background-image: url("WEB_ADDRESS_HERE"); /* adding a background image to it */
+    background-position:bottom/top/right/left/center; /* making the background image centered inside the box */
+    background-repeat: repeat/no-repeat; /* making the background image repeat (like a pattern) or not repeat*/
+    background-size: cover/contain; /* making the background image stretch over the whole box or stay exactly its size*/
+    
+    font-family: 'Times New Roman', Times, serif; /* changing its texts font */
+    font-size: 20px; /* changing its text size*/
+    color: white; /* adding a color to its text (default is black)*/
+
+    /* Getting rid of any annoying white space
+    OR
+    adding extra spaces between boxes (remember to take those extra pixels
+    in account for the size of whatever will be inside this box)*/
+    padding: 0px; 
+    margin: 0px;
+
+}

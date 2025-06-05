@@ -1,218 +1,38 @@
 body {
-    /* Setting the whole page as a flex box */
     display: flex;
     flex-direction: column;
-
-    /* Setting the whole page's default font type*/
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 15px;
-
-    /* Getting rid of annoying built-in extra spaces around boxes
-    for the whole page*/
     padding: 0px;
     margin: 0px;
 }
 
-header {
-    /* Setting the header as a flex box */
+.flowers {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content:space-between;
-
-    background-color: white;
-
-    font-size: 30px;
-
-    /* Setting the header's size in the page
-    relative to the page's width (100% of the page's 'view' width -> 100vw)
-    and the page's height (100 % of the view height -> 100vh) */
+    height: 50vh;
     width: 100vw;
-    height: 10vh;
-
-    position: sticky;
-    top: 0px;
-    z-index: 1;
+    background-color: brown;
 }
 
-.header-item {
+header {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    width: 40%;
-    height: 10vh;
-}
-
-#name {
-    background-color: black;
-    color: white;
-}
-#name a {
-  color: white;
-}
-#name a:hover {
-  color: grey;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+    background-color: blue;
 }
 
 main {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-around;
-    flex-wrap:wrap; /* specifying that elements inside the box
-    must go to the next line instead of continue on forever */
-
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    align-items: top;
-    justify-items: center; */
-    
-    /* Grids are scary! Use them at your own risk. They are the preferred display property for grids, but you can get around using display:flex for your
-    grid like designs.
-    This code above for grids is meant to replace the display:flex section and will create a grid that will shrink rows depending on the website
-    window's size. Math's involved. I didn't manage to figure out how it works.*/
-    
-    gap: 10px;
-
-    padding-left: 2vw;
-    padding-right: 2vw;
-
-    text-wrap: wrap;
-}
-
-#landing {
-    background-image: url('');
-    background-color: grey;
-    background-size: cover;
-    background-position: center;
-    height: 90vh;
-}
-
-#statement {
-  width: 50vw;
-}
-
-#cv {
-  width: 30vw;
-}
-
-.piece {
-    display: block;
-    width: 400px;
-    justify-self: center;
-    align-self: center;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+    background-color: red;
 }
 
 footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content:center;
-    
-    background-color: white;
-
     width: 100vw;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-}
-
-#links {
-  font-size: 30px;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 2;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.85);
-}
-
-.modal-content {
-  margin: auto;
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
-a:hover {
-    color: grey;
-}
-
-#hide {
-  display: none;
-}
-
-#mobile-menu {
-  display: contents;
-}
-
-@media only screen and (max-width: 600px) {
-
-header {
-  flex-direction: column;
-  overflow: hidden;
-  background-color: black;
-  height: unset;
-}
-
-header #mobile-menu {
-  display: none;
-}
-
-#hide {
-  display: inherit;
-}
-
-header a.icon {
-  color: white;
-  display: block;
-  position: absolute;
-  right: 15px;
-}
-
-header a {
-  color: white;
-}
-
-.piece {
-  width: 90vw;
-
-}
-
-#statement {
-  width: inherit;
-}
-
-#cv {
-  width: inherit;
-}
-
+    height: 50vh;
+    background-color: green;
 }

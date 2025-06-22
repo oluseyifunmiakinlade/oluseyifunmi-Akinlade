@@ -179,7 +179,7 @@ a:hover {
 header {
   flex-direction: column;
   overflow: hidden;
-  background-color: rgb(236, 233, 233);
+  background-color: rgb(0, 0, 0);
   height: unset;
 }
 
@@ -198,7 +198,7 @@ header #mobile-menu {
 }
 
 header a.icon {
-  color: black;
+  color: white;
   display: block;
   position: absolute;
   right: 15px;

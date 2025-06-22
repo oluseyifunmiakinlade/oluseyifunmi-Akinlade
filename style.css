@@ -197,7 +197,7 @@ header #mobile-menu {
   display: inherit;
 }
 
-header a.icon {
+header a.bars.svg {
   color: white;
   display: block;
   position: absolute;

@@ -13,9 +13,13 @@
   <body>
     
   <header>
-   <div class="header-item" id="name">HOME <a href="javascript:void(0);" class=icon id="hide" onclick="myFunction()"><video width="600" controls autoplay loop muted>
-  <source src="home-video.mp4" type="video/mp4">
- 
+   <div class="header-item" id="name">HOME <a href="javascript:void(0);" class=icon id="hide" onclick="myFunction()"
+ <div class="video-container">
+  <video width="600" controls autoplay loop muted>
+    <source src="home-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
 </video>
     <i class="fa fa-bars"></i></a></div></a></div>
     <div id="mobile-menu">
@@ -36,7 +40,12 @@ function myFunction() {
 }
 </script>
 
-  <main id="landing"></main>
+<main id="landing" style="display: flex; justify-content: center; align-items: center; min-height: 400px;">
+  <video width="600" controls autoplay loop muted>
+    <source src="home-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</main>
 
   <footer>
     <div id="links">

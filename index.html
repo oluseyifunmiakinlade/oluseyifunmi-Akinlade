@@ -27,12 +27,15 @@
   </header>
 
 <script>
-function myFunction() {
-  var x = document.getElementById("mobile-menu");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+// Place this in a <script> tag at the end of your HTML body or in a separate JS file
+document.getElementById('hide').onclick = function() {
+  var menu = document.getElementById('mobile-menu');
+  if (menu.style.display === 'block') {
+    menu.style.display = 'none';
   } else {
-    x.style.display = "block";
+    menu.style.display = 'block';
+  }
+};
   }
 }
 </script>

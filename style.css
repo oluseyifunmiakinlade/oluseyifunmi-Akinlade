@@ -174,7 +174,7 @@ a:hover {
   display: contents;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 300px) {
 html, body {
   max-width: 100%;
   overflow-x: hidden;
@@ -233,7 +233,7 @@ html, body {
 
 .piece {
   width: 100%;
-  max-width: 320px;
+  max-width: 400px;
   margin: 0 auto;
 
   }
@@ -246,7 +246,7 @@ html, body {
 .gif-container {
   position: relative;
   width: 100%;
-  max-width: 600px; /* Adjust as needed */
+  max-width: 800px; /* Adjust as needed */
   margin: 0 auto;
 }
 

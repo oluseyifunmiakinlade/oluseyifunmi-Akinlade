@@ -174,8 +174,11 @@ a:hover {
   display: contents;
 }
 
-@media only screen and (max-width: 600px) {
-
+@media only screen and (max-width: 320px) {
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
   header {
     flex-direction: column;
     overflow: hidden;
@@ -252,7 +255,4 @@ a:hover {
   height: auto;
   display: block;
 }
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
+

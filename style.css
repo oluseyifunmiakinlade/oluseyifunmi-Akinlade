@@ -228,8 +228,11 @@ a:hover {
     justify-content: flex-start;
   }
 
-  .piece {
-    width: 90vw;
+.piece {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+
   }
 
   #statement,

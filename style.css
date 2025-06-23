@@ -45,8 +45,8 @@ header {
 }
 
 #name {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
 }
 #name a {
   color: white;

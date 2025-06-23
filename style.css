@@ -222,13 +222,14 @@ header a {
 }
 
 }
-.video-container {
+.gif-container {
   position: relative;
   width: 100%;
-  max-width: 800px;  /* Adjust maximum width as needed */
+  max-width: 800px; /* Adjust as needed */
   margin: 0 auto;
 }
-.video-container video {
+
+.gif-container img {
   width: 100%;
   height: auto;
   display: block;

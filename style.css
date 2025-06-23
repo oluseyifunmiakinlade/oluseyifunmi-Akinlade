@@ -176,51 +176,66 @@ a:hover {
 
 @media only screen and (max-width: 600px) {
 
-header {
-  flex-direction: column;
-  overflow: hidden;
-  background-color: rgb(0, 0, 0);
-  height: unset;
-}
+  header {
+    flex-direction: column;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    height: unset;
+  }
 
-header #mobile-menu {
-  display: none;
-  flex-direction: column;
-  background: #222;
-  width: 100vw;
-  position: absolute;
-  top: 10vh;
-  left: 0;
-  z-index: 10;
-}
-#hide {
-  display: inherit;
-}
+  /* Show the menu icon (hamburger) */
+  #hide {
+    display: block !important;
+    cursor: pointer;
+    font-size: 2em;
+    background: none;
+    border: none;
+    color: white;
+    margin-left: auto;
+    margin-right: 10px;
+  }
 
-header a.bars.svg {
-  color: white;
-  display: block;
-  position: absolute;
-  right: 15px;
-}
+  /* Hide the menu links by default */
+  #mobile-menu {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    width: 100vw;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    z-index: 10;
+  }
 
-header a {
-  color: white;
-}
+  /* When menu is active (JS sets display:block), it appears as a dropdown */
+  #mobile-menu.active,
+  #mobile-menu[style*="display: block"] {
+    display: flex !important;
+  }
 
-.piece {
-  width: 90vw;
+  header a {
+    color: white;
+    font-size: 1.2em;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+    width: 100%;
+  }
 
-}
+  .header-item {
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+  }
 
-#statement {
-  width: inherit;
-}
+  .piece {
+    width: 90vw;
+  }
 
-#cv {
-  width: inherit;
-}
-
+  #statement,
+  #cv {
+    width: 100vw;
+  }
 }
 .gif-container {
   position: relative;

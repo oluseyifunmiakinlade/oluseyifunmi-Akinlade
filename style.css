@@ -252,7 +252,7 @@ html, body {
   position: relative;
   width: 100%;
   max-width: 800px; /* Adjust as needed */
-  margin: 60px auto 0 auto; /* 20px at the top, adjust as needed */
+  margin: 40px auto 0 auto; /* 20px at the top, adjust as needed */
 }
 
 }

@@ -99,7 +99,7 @@ main {
 
 .piece {
     display: block;
-    width: 400px;
+    width: 800px;
     justify-self: center;
     align-self: center;
 }

@@ -195,18 +195,20 @@ a:hover {
     margin-right: 10px;
   }
 
-  /* Hide the menu links by default */
-  #mobile-menu {
-    display: none;
-    flex-direction: column;
-    background: #222;
-    width: 100vw;
-    position: absolute;
-    top: 10vh;
-    left: 0;
-    z-index: 10;
-  }
 
+#mobile-menu {Add commentMore actions
+  display: none;
+}
+#mobile-menu.active {
+  display: flex !important;
+  flex-direction: column;
+  background: #222;
+  width: 100vw;
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  z-index: 10;
+}
   /* When menu is active (JS sets display:block), it appears as a dropdown */
   #mobile-menu.active,
   #mobile-menu[style*="display: block"] {

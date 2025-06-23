@@ -201,7 +201,7 @@ a:hover {
     flex-direction: column;
     background: #222;
     width: 100vw;
-    position: absolute;
+    position: fixed;
     top: 10vh;
     left: 0;
     z-index: 10;
@@ -248,4 +248,8 @@ a:hover {
   width: 100%;
   height: auto;
   display: block;
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }

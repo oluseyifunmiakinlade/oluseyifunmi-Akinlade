@@ -259,6 +259,11 @@ html, body {
   margin: 20px auto 0 auto; /* centers container horizontally */
   height: 400px; /* set a height if you want vertical centering */
 }
+.center-gif {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .gif-container img {
   display: block;

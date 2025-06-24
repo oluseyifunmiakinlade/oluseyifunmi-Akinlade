@@ -4,12 +4,7 @@ body {
     flex-direction: column;
 
     /* Setting the whole page's default font type*/
-    .jost-<uniquifier> {
-  font-family: "Jost", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-    font-family:'Jost, sans-serif;
+    font-family:'"Jost", sans-serif;
     font-size: 15px;
 
     /* Getting rid of annoying built-in extra spaces around boxes

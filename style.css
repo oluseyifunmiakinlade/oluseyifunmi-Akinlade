@@ -251,19 +251,17 @@ html, body {
   }
 }
 .gif-container {
-  position: center;
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically */
   width: 100%;
-  max-width: 800px; /* Adjust as needed */
-   margin: 20px auto 0 auto; /* 20px at the top, adjust as needed */
-}
-
-}
-
+  max-width: 800px;
+  margin: 20px auto 0 auto; /* centers container horizontally */
+  height: 400px; /* set a height if you want vertical centering */
 }
 
 .gif-container img {
-  width: 100%;
-  height: auto;
   display: block;
+  max-width: 100%;
+  height: auto;
 }
-

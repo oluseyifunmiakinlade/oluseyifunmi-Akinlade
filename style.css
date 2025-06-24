@@ -251,7 +251,7 @@ html, body {
 .gif-container {
   position: relative;
   width: 100%;
-  max-width: 800px; /* Adjust as needed */
+  max-width: 900px; /* Adjust as needed */
   margin: 20px auto 0 auto; /* 20px at the top, adjust as needed */
 }
 

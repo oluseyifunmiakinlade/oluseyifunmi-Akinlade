@@ -4,7 +4,7 @@ body {
     flex-direction: column;
 
     /* Setting the whole page's default font type*/
-    font-family:'Spectral", serif;
+    font-family:'Spectral, serif;
     font-size: 15px;
 
     /* Getting rid of annoying built-in extra spaces around boxes

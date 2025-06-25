@@ -225,14 +225,6 @@ a:hover {
   #mobile-menu[style*="display: block"] {
     display: flex !important;
   }
-}
-  }
-
-  .header-item {
-    width: 100%;
-    height: auto;
-    justify-content: flex-start;
-  }
 
 .piece {
   width: 100%;

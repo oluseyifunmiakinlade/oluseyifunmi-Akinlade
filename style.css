@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
     /* Setting the whole page as a flex box */
     display: flex;
@@ -258,11 +262,15 @@ a:hover {
   display: block;
   max-width: 100%;
   height: auto;
-}  @media only screen and (max-width: 300px) {
-  .gif-container {
+/* Optional: Extra tweak for very small mobile screens */
+@media (max-width: 400px) {
+  .gif-container,
+  .gif-container img {
+    width: 100vw;
     max-width: 100vw;
-    min-height: 120px;
-    padding: 0 10px;
+    padding: 0;
+  }
+}
   }
   .gif-container img {
     max-width: 100vw;

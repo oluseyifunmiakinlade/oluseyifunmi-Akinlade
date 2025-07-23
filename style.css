@@ -249,12 +249,12 @@ a:hover {
 }
 .gif-container {
   display: flex;
-  justify-content: center; /* centers horizontally */
-  align-items: center;     /* centers vertically */
+  justify-content: center;
+  align-items: center;
   width: 100%;
   max-width: 800px;
-  margin: 20px auto 0 auto; /* centers container horizontally */
- 
+  min-height: 80vh; /* Ensures vertical centering */
+  margin: 0 auto;
 }
 .center-gif {
   display: block;

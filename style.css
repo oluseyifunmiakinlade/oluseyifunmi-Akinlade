@@ -193,7 +193,7 @@ a:hover {
   }
   @media (max-width: 600px) {
   #name {
-    display: none;
+    display: none !important;
   }
   .header-item {
     width: 100%;

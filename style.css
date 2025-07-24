@@ -185,6 +185,22 @@ a:hover {
   display: contents;
 }
 @media only screen and (max-width: 600px) {
+  /* Hide HOME in header on mobile */
+@media (max-width: 768px) {
+  #name {
+    display: none;
+  }
+  #mobile-menu .header-item:first-child {
+    display: block;
+  }
+}
+
+/* Hide HOME in menu on desktop */
+@media (min-width: 769px) {
+  #mobile-menu .header-item:first-child {
+    display: none;
+  }
+}
   header {
     flex-direction: column;
     overflow: hidden;

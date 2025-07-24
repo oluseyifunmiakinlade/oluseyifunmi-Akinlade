@@ -229,7 +229,7 @@ a:hover {
   }
   /* Show hamburger, hide menu by default, show on active */
   #hide {
-    display: block !important;
+    display: none !important;
     cursor: pointer;
     font-size: 2em;
     background: none;

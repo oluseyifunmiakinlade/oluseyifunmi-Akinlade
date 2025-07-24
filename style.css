@@ -179,6 +179,26 @@ a:hover {
 
 #hide {
   display: none;
+}/* Hide mobile HOME in desktop view */
+.mobile-home {
+  display: none;
+}
+
+/* Show desktop HOME in desktop view */
+#name {
+  display: block;
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  /* Hide desktop HOME */
+  #name {
+    display: none;
+  }
+  /* Show mobile HOME inside hamburger menu */
+  .mobile-home {
+    display: block;
+  }
 }
 
 #mobile-menu {

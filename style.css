@@ -199,13 +199,11 @@ a:hover {
   .mobile-home {
     display: block;
   }
-}
 
 #mobile-menu {
   display: contents;
   #name {
   display: none !important;
-}
 }
 @media only screen and (max-width: 600px) {
   header {

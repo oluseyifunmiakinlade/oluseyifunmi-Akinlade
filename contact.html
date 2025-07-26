@@ -13,31 +13,32 @@
   <body>
 
  <header>
-  <!-- HOME for desktop -->
-  <a class="header-item" id="name" href="index.html">HOME</a>
+  <!-- Desktop navigation -->
+  <nav class="desktop-nav">
+    <a class="header-item" href="index.html">HOME</a>
+    <a class="header-item" href="work.html">WORK</a>
+    <a class="header-item" href="about.html">ABOUT</a>
+    <a class="header-item" href="contact.html">CONTACT</a>
+  </nav>
 
-  <!-- Hamburger icon -->
-  <a href="javascript:void(0);" class="icon" id="hide" onclick="myFunction()">
+  <!-- Mobile hamburger icon -->
+  <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
 
   <!-- Mobile menu -->
   <div id="mobile-menu">
-    <!-- HOME for mobile (top of menu) -->
-    <div class="header-item mobile-home"><a href="index.html">HOME</a></div>
-    <div class="header-item"><a href="work">WORK</a></div>
-    <div class="header-item"><a href="about">ABOUT</a></div>
-    <div class="header-item"><a href="contact">CONTACT</a></div>
+    <a class="mobile-item" href="index.html">HOME</a>
+    <a class="mobile-item" href="work.html">WORK</a>
+    <a class="mobile-item" href="about.html">ABOUT</a>
+    <a class="mobile-item" href="contact.html">CONTACT</a>
   </div>
 </header>
 <script>
 function myFunction() {
   var x = document.getElementById("mobile-menu");
-  if (x.style.display === "contents") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "contents";
-  }
+  x.classList.toggle("active");
+  document.body.classList.toggle("menu-active");
 }
 </script>
 

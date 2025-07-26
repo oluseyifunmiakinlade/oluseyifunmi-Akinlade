@@ -15,7 +15,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background-color: white;
   font-size: 30px;
   width: 100vw;
@@ -30,7 +30,7 @@ header {
   align-items: center;
   justify-content: center;
   color: black;
-  width: 40%;
+  flex: 1;
   height: 10vh;
 }
 
@@ -171,15 +171,18 @@ a:hover {
 /* Hamburger and mobile menu styles */
 @media only screen and (max-width: 600px) {
   header {
-    flex-direction: column;
+    flex-direction: row;
     overflow: hidden;
     background-color: rgb(0, 0, 0);
-    height: unset;
+    height: 10vh;
+    justify-content: space-between;
+    padding: 0 10px;
   }
   .header-item {
     width: 100%;
     height: auto;
-    justify-content: flex-start;
+    justify-content: center;
+    flex: none;
   }
   header a {
     color: white;
@@ -195,11 +198,9 @@ a:hover {
     cursor: pointer;
     font-size: 2em;
     background: none;
-    border: 2px black;
+    border: none;
     color: white;
-    margin-left: auto;
-    margin-right: 10px;
-    border-radius: 4px;
+    align-self: center;
   }
   #mobile-menu {
     display: none;

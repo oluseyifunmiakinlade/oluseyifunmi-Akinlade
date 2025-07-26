@@ -15,7 +15,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: white;
   font-size: 30px;
   width: 100vw;
@@ -42,7 +42,7 @@ header {
   background-color: white;
   color: black;
   text-decoration: none;
-  width: 20%;
+  flex: 1;
 }
 
 /* Top HOME link styling */
@@ -68,7 +68,7 @@ header {
   justify-content: space-evenly;
   align-items: center;
   gap: 0;
-  width: 60%;
+  flex: 3;
   background: none;
   position: static;
   top: unset;
@@ -271,7 +271,7 @@ a:hover {
     align-items: center;
     position: static;
     background: none;
-    width: 60%;
+    flex: 3;
     height: 100%;
     gap: 0;
   }

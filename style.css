@@ -35,6 +35,9 @@ header {
 }
 
 #name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: white;
   color: black;
   text-decoration: none;
@@ -179,7 +182,7 @@ a:hover {
   .header-item {
     width: 100%;
     height: auto;
-    justify-content: flex-start;
+    justify-content: center;
   }
   header a {
     color: white;

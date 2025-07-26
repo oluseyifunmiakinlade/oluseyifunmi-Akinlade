@@ -55,11 +55,6 @@ header {
 #hide {
   display: none;
 }
-
-/* Desktop/tablet: show top HOME, hide mobile HOME */
-#name {
-  display: block;
-}
 .mobile-home {
   display: none;
 }

@@ -15,7 +15,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background-color: white;
   font-size: 30px;
   width: 100vw;
@@ -23,6 +23,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1;
+  padding: 0 2rem;
 }
 
 .header-item {
@@ -41,6 +42,7 @@ header {
   background-color: white;
   color: black;
   text-decoration: none;
+  width: 20%;
 }
 
 /* Top HOME link styling */
@@ -63,10 +65,10 @@ header {
 #mobile-menu {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 1.5rem;
-  width: 100%;
+  gap: 0;
+  width: 60%;
   background: none;
   position: static;
   top: unset;
@@ -78,6 +80,8 @@ header {
 #mobile-menu .header-item {
   width: auto;
   height: 100%;
+  flex: 1;
+  text-align: center;
 }
 
 /* Mobile: hide top HOME, show mobile HOME in menu */
@@ -263,13 +267,13 @@ a:hover {
   #mobile-menu {
     display: flex !important;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     position: static;
     background: none;
-    width: 100%;
+    width: 60%;
     height: 100%;
-    gap: 1.5rem;
+    gap: 0;
   }
 }
 

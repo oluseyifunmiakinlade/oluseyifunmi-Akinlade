@@ -211,8 +211,7 @@ a:hover {
     left: 0;
     z-index: 10;
   }
-  #mobile-menu.active,
-  #mobile-menu[style*="display: block"] {
+  #mobile-menu.active {
     display: flex !important;
   }
   .piece {
@@ -227,8 +226,10 @@ a:hover {
 }
 
 /* Hamburger menu container (desktop/tablet: contents, mobile: flex) */
-#mobile-menu {
-  display: contents;
+@media only screen and (min-width: 601px) {
+  #mobile-menu {
+    display: contents;
+  }
 }
 
 /* FLEXBOX GIF CENTERING */

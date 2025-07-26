@@ -34,11 +34,8 @@
 <script>
 function myFunction() {
   var x = document.getElementById("mobile-menu");
-  if (x.style.display === "contents") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "contents";
-  }
+  x.classList.toggle("active");
+  document.body.classList.toggle("menu-active");
 }
 </script>
 

@@ -51,7 +51,7 @@ function myFunction() {
       </div>
      <div><img src="june.jpg" class="piece" data-images="june.jpg|Moviegoer.jpg|your-third-image.jpg" oncontextmenu="return false;" onclick="openModal(this)"> Incompatible Structures (2025)
      </div>
-      <div><img src="Obedience.jpg" class="piece" oncontextmenu="return false;" onclick="openModal('Obedience.jpg')"> Obedience (2026)
+      <div><img src="Obedience.jpg" class="piece" data-images="Obedience.jpg|Obedience.mp4" oncontextmenu="return false;" onclick="openModal(this)"> Obedience (2026)
       </div>
      <div><img src="Church.jpg" class="piece" oncontextmenu="return false;" onclick="openModal('Church.jpg')"> God's Got You (2026)
       </div>
@@ -70,6 +70,7 @@ function myFunction() {
       <span class="close" onclick="closeModal()">&times;</span>
       <button type="button" class="slide-nav prev" onclick="changeSlide(-1)" aria-label="Previous slide" hidden>&#10094;</button>
       <img class="modal-content" id="modalImage">
+      <video class="modal-content" id="modalVideo" controls autoplay loop muted playsinline preload="metadata" hidden></video>
       <button type="button" class="slide-nav next" onclick="changeSlide(1)" aria-label="Next slide" hidden>&#10095;</button>
   </div>
 
@@ -87,7 +88,23 @@ function myFunction() {
       }
 
       function showSlide() {
-          document.getElementById("modalImage").src = slides[currentSlide];
+          const source = slides[currentSlide];
+          const image = document.getElementById("modalImage");
+          const video = document.getElementById("modalVideo");
+          const isVideo = source.toLowerCase().endsWith(".mp4");
+
+          video.pause();
+          image.hidden = isVideo;
+          video.hidden = !isVideo;
+          if (isVideo) {
+              image.removeAttribute("src");
+              video.src = source;
+              video.load();
+          } else {
+              video.removeAttribute("src");
+              video.load();
+              image.src = source;
+          }
           document.querySelectorAll("#myModal .slide-nav").forEach(function (arrow) {
               arrow.hidden = slides.length <= 1;
           });
@@ -100,6 +117,7 @@ function myFunction() {
 
       function closeModal() {
           document.getElementById("myModal").style.display = "none";
+          document.getElementById("modalVideo").pause();
       }
   </script>
 

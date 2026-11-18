@@ -48,8 +48,54 @@ function myFunction() {
       <div><img src="Image 4-21-22 at 11.29 AM.jpeg" class="piece" oncontextmenu="return false;" onclick="openModal('Image 4-21-22 at 11.29 AM.jpeg')"> I See Myself In You (2022)
       </div>
       <div><img src="omo.jpg" class="piece" oncontextmenu="return false;" onclick="openModal('omo.jpg')"> Ọmọ Goolu (2022)
-      </div>
-      <div><img src="june.jpg" class="piece" oncontextmenu="return false;" onclick="openModal('june.jpg')"> Incompatible Structures (2025)
+      </div>- <div><img src="june.jpg" class="piece" oncontextmenu="return false;" onclick="openModal('june.jpg')"> Incompatible Structures (2025)
++ <div><img src="june.jpg" class="piece"
++   data-images="june.jpg|june-2.jpg|june-3.jpg"
++   oncontextmenu="return false;" onclick="openModal(this)"> Incompatible Structures (2025)
+  </div>
+
+  <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
++     <span class="slide-nav prev" onclick="changeSlide(-1)">&#10094;</span>
+      <img class="modal-content" id="modalImage">
++     <span class="slide-nav next" onclick="changeSlide(1)">&#10095;</span>
+  </div>
+
+  <script>
+-     function openModal(src) {
+-         document.getElementById("modalImage").src = src;
++     let slides = [];
++     let currentSlide = 0;
++
++     function openModal(imageOrElement) {
++         if (typeof imageOrElement === "string") {
++             // Keep the existing single-image entries working.
++             slides = [imageOrElement];
++         } else {
++             slides = (imageOrElement.dataset.images || imageOrElement.src)
++                 .split("|");
++         }
++         currentSlide = 0;
++         showSlide();
+          document.getElementById("myModal").style.display = "block";
+      }
+ 
++     function showSlide() {
++         document.getElementById("modalImage").src = slides[currentSlide];
++         document.querySelectorAll(".slide-nav").forEach(function (arrow) {
++             arrow.style.display = slides.length > 1 ? "block" : "none";
++         });
++     }
++
++     function changeSlide(direction) {
++         currentSlide = (currentSlide + direction + slides.length) % slides.length;
++         showSlide();
++     }
++
+      function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+      }
+  </script>
      </div>
       <div><img src="Obedience.jpg" class="piece" oncontextmenu="return false;" onclick="openModal('Obedience.jpg')"> Obedience (2026)
       </div>

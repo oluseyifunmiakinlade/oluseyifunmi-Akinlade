@@ -51,7 +51,7 @@ function myFunction() {
       </div>
      <div><img src="june.jpg" class="piece" data-images="june.jpg|Moviegoer.jpg|your-third-image.jpg" oncontextmenu="return false;" onclick="openModal(this)"> Incompatible Structures (2025)
      </div>
-      <div><img src="Obedience.jpg" class="piece" data-images="Obedience.jpg|Obedience.mp4" oncontextmenu="return false;" onclick="openModal(this)"> Obedience (2026)
+      <div><img src="Obedience.jpg" class="piece" data-images="Obedience.mp4|Obedience.jpg" oncontextmenu="return false;" onclick="openModal(this)"> Obedience (2026)
       </div>
      <div><img src="Church.jpg" class="piece" oncontextmenu="return false;" onclick="openModal('Church.jpg')"> God's Got You (2026)
       </div>
@@ -83,8 +83,8 @@ function myFunction() {
               ? [imageOrElement]
               : (imageOrElement.dataset.images || imageOrElement.getAttribute("src")).split("|");
           currentSlide = 0;
-          showSlide();
           document.getElementById("myModal").style.display = "block";
+          showSlide();
       }
 
       function showSlide() {
